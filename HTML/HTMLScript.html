@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!--Grundgerüst mit "!" oder html:5-->
+<html lang="de"> 
+    <head>
+      <meta charset="UTF-8">
+        <meta name="description" content="meta data">
+        <meta name="keywords" content="HTML, head, title, meta, link, style, Uebung 1">
+        <meta name="author" content="Jörn Freiheit, abgeändert von Jana Michel">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+          body {background-color: #ffffff;}        
+          h1 {color: #000000;} <!-- färbt die Überschrift-->    
+          ul {color: #00aeff;} <!--färbt die ungeordnete Liste-->
+        </style>
+        <script> 
+          function myFunction()  //zum Definieren von Client-seitigen JavaScript Funktionen
+          { 
+            document.getElementById("demo").innerHTML = "Hallo FIW!";        
+          }
+        </script>
+        <base href="localhost/Webtech20" target="_blank"> <!--Einfügung von Links-->
+        <title>Uebung 1</title>
+    </head>    
+      
+    <body>
+        <h1>Das ist eine große Überschrift</h1> <!--Überschriften von h1 bis h6-->
+        <h3>zweite kleinere Überschrift</h3>
+        <p>Normaler text</p> <!--Hier kann ein normaler Text eingefügt werden-->
+        <h3>Nummerierte Liste.</h3> 
+        <ol>
+            <li>Blockelement</li>
+            <li>Blockelement</li>
+           <li>Blockelement mit <b>Inline-Element</b></li>
+        </ol>
+        <h3>Strichpunktliste</h3>
+        <ul>
+            <li>Eintrag A</li>
+            <li>Eintrag B</li>
+            <li>Eintrag C</li>
+       </ul>
+       <h3>Tabelle</h3>
+       <table>
+           <thead>
+              <tr>
+                <th>Vorname</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Max</td>
+                    <td>Mustermann</td>
+                </tr>
+                <tr>
+                    <td>Maxine</td>
+                    <td>Mustermann</td>
+                </tr>
+             </tbody>
+        </table>
+        <h3>Hyperlink</h3>
+        <a href="http://www.htw-berlin.de" target="_blank">HTW Berlin</a>
+        <!-- ressourcen angabe, gefolgt von Beschreibung des Links-->
+        <img src="../../Images/fiw.jpg" alt="FIW-Logo"/>
+
+    </body>
+</html>
