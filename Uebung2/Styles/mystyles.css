@@ -1,0 +1,52 @@
+body
+{
+    font-family: verdana;
+}
+header 
+    {
+        background-color: #AFAFAF;
+
+    }
+  
+  h1 {
+    color: #e98707;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    color: #000000;
+    font-variant: small-caps;
+  }
+  
+  p {
+    font-weight: bold;
+  }
+  
+  span {
+    font-style: italic;
+  }
+  
+  a {
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10%;
+    
+  }
+  table 
+  {
+      border-collapse: collapse;
+      box-shadow: 5px 10px 10px 5px rgb(110, 108, 108); 
+  }
+  section th, td
+  {
+    border: 2px solid black;
+    padding: 10px;
+  }
+  thead
+  {
+    background-color: #76B900;
+    color: #ffffff;
+  }
