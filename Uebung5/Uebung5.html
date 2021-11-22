@@ -125,7 +125,8 @@
                         <td>candrewsp@noaa.gov</td>
                         <td>112.111.87.178</td>
                     </tr>
-                    <tr><td></td>
+                    <tr>
+                        <td></td>
                         <td>Alan</td>
                         <td>Bradley</td>
                         <td>abradley1c@globo.com</td>
@@ -454,19 +455,19 @@
                     </tr>
                     <tr>
                         <td>
-                            <button type="button" class="btn btn-primary" onclick="checkAndAdd()">add</button>
+                            <button type="button" class="btn btn-secondary" onclick="checkAndAdd()">add</button>
                         </td>
                         <td>
-                            <input id="test1" type="text" class="form-control" placeholder="Vorname" onchange="doSomething()"/>
+                            <input id="test1" type="text" class="form-control" placeholder="Vorname"/>
                         </td>
                         <td>
-                            <input id="test2" type="text" class="form-control" placeholder="Nachname" onchange="doSomething()"/>
+                            <input id="test2" type="text" class="form-control" placeholder="Nachname"/>
                         </td>
                         <td>
-                            <input id="test3" type="text" class="form-control" placeholder="E-Mail-Adresse" onchange="doSomething()"/>
+                            <input id="test3" type="text" class="form-control" placeholder="E-Mail-Adresse" />
                         </td>
                         <td>
-                            <input id="test4" type="text" class="form-control" placeholder="IP-Adresse" onchange="doSomething()"/>
+                            <input id="test4" type="text" class="form-control" placeholder="IP-Adresse" />
                         </td>
                         
                     </tr>
@@ -477,30 +478,29 @@
         <section id="rechts" class="col-12 col-lg-2 ">
             <h5 class="pt-3 ">rechts</h5>
         </section>
-        <script>
-            function doSomething()
-            {
-                
-                    let input1 = document.getElementById('test1')
-                    let input1_value = input1.value;
-                    let tr = document.getElementById('test1')
-                    let new_item = document.createElement('test1');
-                    if(input1_value === '')
-                    {
-                        input1.classList.add('is-invalid')
-                    }
-                    else
-                    {
-                        input1.classList.remove('is-invalid')
-                    }
-                    new_item.innerHTML = input1_value;
-                    let listitems = document.getElementsByTagName('test1')
-                
-            }
-        </script>
+        
     </main>
+    <script>
+        
+        function checkAndAdd()
+        {
+            console.log('Button clicked');
+            let input1 = document.getElementById('test1');
+            console.log('input1 : ' = input1);
+            let input1_value = input1.value;
+            console.log('input1_value : ' = input1_value);
+
+            let input_tag = document.getElementsByTagName('input'); //gibt ein Array zurück, von allen input-wertetypen
+            //inputs[0] hier eckige klammer nutzen
+            console.log(input_tag);
+            for(let i = 0; i < input_tag.length; i++)
+            {
+                console.log.i + "I ", input_tag[i] 
+            }
+        }
+    </script>
     <footer>
-        Jörn Freiheit - Übung 4
+        Jörn Freiheit - Übung 5
     </footer>
 </body>
 
