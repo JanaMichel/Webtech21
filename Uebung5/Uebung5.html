@@ -493,10 +493,59 @@
             let input_tag = document.getElementsByTagName('input'); //gibt ein Array zurück, von allen input-wertetypen
             //inputs[0] hier eckige klammer nutzen
             console.log(input_tag);
+            let inputOk = true;
+
+            
             for(let i = 0; i < input_tag.length; i++)
             {
                 console.log.i + "I ", input_tag[i] 
             }
+
+            if(input1_value == "")
+            {
+                input.classList.remove('is-valid');
+                input1.classList.add('is-invalid');
+                inputOk = false;
+            }
+            else
+            {
+                input1.classList.remove('is-invalid');
+                input1.classList.add('is-valid');
+            }
+
+            if(inputOk)
+            {
+                //neue Tabellenzeile erzeugen
+                let newTr = document.createElement('tr');
+                let td1 = document.createElement('td');
+                let td2 = document.createElement('td');
+                let td3 = document.createElement('td');
+                let td4 = document.createElement('td');
+                let td5 = document.createElement('td');
+                td1.innerHTML = input_tag[0].value;
+                td2.innerHTML = input_tag[1].value;
+                td3.innerHTML = input_tag[2].value;
+                td4.innerHTML = input_tag[3].value;
+                td5.innerHTML = "";
+                newTr.appendChild(td1); //anhängen der td and die tr
+                newTr.appendChild(td2);
+                newTr.appendChild(td3);
+                newTr.appendChild(td4);
+                newTr.appendChild(td5);
+
+                let tbody = document.getElementById('table_body');
+                tbody.appendChild(newTr) //anhängen der tr an tablebody
+
+            }
+
+
+            let input2 = document.getElementById('test2');
+            let input2_value = input2.value;
+            let input3 = document.getElementById('test3');
+            let input3_value = input3.value;
+            let input4 = document.getElementById('test4');
+            let input4_value = input4.value;
+
         }
     </script>
     <footer>
