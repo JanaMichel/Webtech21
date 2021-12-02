@@ -1,0 +1,31 @@
+
+<h3>{{ title }}</h3>
+<button (click)="changeStatus()">
+    {{btn_text}}
+</button>
+<p>Stadt: {{staedte_json.staedte[0].stadt}}</p>
+<p *ngFor="let stadt of staedte_json.staedte">{{ stadt.jahr}}</p> <!--durch array durchlaufen-->
+<!--absatz für jedes Objekt -- variable name durchlaufen des arrays {{gebe uns von jeder stadt das jahr aus}}-->
+<!--tabelle mit tablehead, tbody tr-->
+<table *ngIf="show">
+    <thead>
+        <tr>
+            <th>Nr.</th>
+            <th>Jahr</th>
+            <th>Stadt</th>
+            <th>Bild</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of staedte; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{s.jahr}}</td>
+            <td>{{s.stadt}}</td>
+            <td>
+                <a [href]="s.link">
+                    <img [src]= "s.bild" [alt]= "s.stadt">
+                </a>
+            </td> <!--propperty binding, anbindung variable-->
+        </tr>
+    </tbody>
+</table>
