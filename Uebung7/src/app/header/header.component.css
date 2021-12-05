@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(247, 105, 10);
+    padding: 20px;
+    text-align: center;
+}
+
+*{
+    background-color: gray;
+}

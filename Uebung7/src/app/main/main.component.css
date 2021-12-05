@@ -1,0 +1,52 @@
+* {
+    --htw-green: #76B900;
+    --htw-orange: #FF5F00;
+    --htw-blue: #0082D1;
+}
+
+.table tbody tr:hover {
+    background-color: var(--htw-green);
+    
+}
+
+nav {
+    background-color: lightgrey;
+}
+
+#links,
+#rechts {
+    background-color: #FF5F00;
+    height: 100px;
+}
+
+main {
+    margin: 1%;
+}
+
+ul li.nav-item a.nav-link {
+    color: #FF5F00;
+}
+
+ul li.nav-item a:hover {
+    color: #0082D1;
+}
+
+button {
+    background-color: var(--htw-green);
+    width: 100%;
+    padding: 5px;
+}
+table{
+    width: 100%;
+    border-color: black;
+    border-collapse: collapse;
+    text-align:left;
+    padding: 10px;
+}
+
+#nichtAnzeigen {
+    padding: 10%;
+    margin: 1%;
+    text-align: center;
+    background-color: var(--htw-green);
+}
